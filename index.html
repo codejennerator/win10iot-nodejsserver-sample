@@ -32,24 +32,35 @@
     <li>Install python 2.7 (only 2.7 works, 3 does not work yet)</li>
     <p><img src="images/python2.7Download.PNG" alt="Python Download"></p>
     <p><img src="images/pythonInstall.PNG" alt="Python Installation"></p>
-    <li>Download and install the Node Tools for UWP</li>
+    <li>Download and install the Node.js Tools for UWP Apps</li>
     <p><a href="https://github.com/ms-iot/ntvsiot/releases">https://github.com/ms-iot/ntvsiot/releases</a></p>
     <p><img src="images/ntvsiot.PNG" alt="ntvsiot Download"></p>
     
     <li>Start Visual Studio</li>
-    <li>Choose npm -> new npm packages</li> 
+    <li>Create a new Project</li>
+    <p><img src="images/NewProject.png" alt="new project"></p>
+    <li>Select Javascript -> Node.js -> Blank Node.js Web Server (Universal Windows)</li>
+    <p><img src="images/selectProjectType.PNG  " alt="new project"></p>
+    <li>Choose npm -> Install New npm Packages</li> 
     <p><img src="images/installNpmPackages.png" alt="new npm packages"></p>
     <li>install local express npm package</li>
     <p><img src="images/installexpress.PNG"></p>
 
-    <li>project properties- put in remote machine ipaddress or name - save</li>
+    <li>Select Project -> Properties</li>
     <p><img src="images/projectPropertiesForAddingRemoteDebugging.png" alt="remote debugging"></p>
+    <li>Put in remote machine ip address or machine name - save the file</li>
     <p><img src="images/putInRemoteMachineNum.PNG" alt="remote machine ipaddress or name"></p>
+    
+    <li><ul>Get files from GitHub</li>
+    <li>
+        git clone <a href="https://github.com/jennparise/win10iot-nodejsserver-sample.git">https://github.com/jennparise/win10iot-nodejsserver-sample.git</a>
+    </li>
+    <li>Copy the server.js file from the files you just downloaded and replace the server.js in the Visual Studio Project</li></ul>
 
-    <li><ul>choose to run "Remote Machine" Debug Arm</li>
+    <li><ul>Choose to run "Remote Machine" with Debug Arm selected</li>
     <li>
         <p>A pop up may appear warning about developer mode</p>
-            <p><img src="images/enableDevoperModeWarning.PNG" alt="developer mode warning"></p>
+        <p><img src="images/enableDevoperModeWarning.PNG" alt="developer mode warning"></p>
     </li></ul>
 
 

@@ -12,7 +12,7 @@ var port = process.env.PORT || 1337;
 
 app.get('/', function (req, res) {
     
-    res.json({ message: 'Welcome, try using: /updatePin /addPin or /deletePin. Be sure to pass a pin_num parameter.' });
+    res.json({ message: 'Welcome, try using: PUT /updatePin POST /addPin or DELETE /deletePin. Be sure to pass a pin_num parameter. Example: POST http://192.168.1.123:1337/addPin?pin_num=27' });
 });
 
 //gets the pin number from the request, finds out its current value and changes it from on to off or from off to on
@@ -45,7 +45,7 @@ app.get('/readPin', function (req, res) {
 
 //gets the pin number from the request, finds out its current value and changes it from on to off or from off to on
 app.put('/updatePin', function (req, res) {
-        
+    
     if (req.param('pin_num')) {
         
         var pinNum = req.param('pin_num');
